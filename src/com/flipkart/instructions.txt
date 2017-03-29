@@ -1,0 +1,23 @@
+The application will query the API service to get the list of categories and it will prompt the user to select one of them then it will list down all the products for the given category.
+
+The zip file contains six files:
+APIFeeds.java
+DataParser.java
+XMLDataParser.java
+JSONDataParser.java
+AffiliateAPIException.java
+ProductInfo.java
+
+In order to execute the application, do the following:
+javac APIFeeds.java
+java APIFeeds <AffiliateID> <AffiliateToken> <JSON>
+
+Dependencies:
+JSON Parsing jar (org.json-20120521.jar) can be availed at:
+https://code.google.com/p/org-json-java/downloads/list
+
+After saving the jar in the current folder. Do the following:
+javac -cp .:./org.json-20120521.jar APIFeeds.java
+java -cp .:./org.json-20120521.jar APIFeeds <AffiliateId> <AffiliateToken> JSON
+
+For any queries please contact affiliate@flipkart.com
